@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Wars - Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="contenido/clone wars.jpg" >
+            <nav class="menu">
+                <a href="index.html"><strong>INICIO</strong></a>
+                <a href="pelicula.html"><strong>PELICULA</strong></a>
+                <a href="temporadas.html"><strong>TEMPORADAS</strong></a>
+                <a href="personajes.html"><strong>PERSONAJES</strong></a>
+                <a href="continuaciones.html"><strong>CONTINUACIONES</strong></a>
+                <a href="galeria.html"><strong>GALERIA</strong></a>
+                <a href="juego.html"><strong>JUEGO</strong></a>
+                <a href="contacto.html"><strong>CONTACTO</strong></a>
+                 <a href="alumno.html"><strong>ALUMNO</strong></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <section>
+            <div class="container" align="left">
+            <h3><strong>Contacto</strong></h3>
+        </div>
+        <br>
+        <div class="container" align="left">
+         <button onclick="SingUp()">Sing Up</button>
+     </div>
+     <div class="container" align="left">
+         <button onclick="LogIn()">Log In</button>
+     </div>
+             <script type="text/javascript">
+                var user;
+                var password;
+                var login;
+                var login2;
+                        function SingUp() {
+                         user=prompt("Ingrese su nombre de usuario","");  
+                         password=prompt("Ingrese su contraseña","");
+
+                        }
+                        function LogIn() {
+                         login=prompt("Ingrese su nombre de usuario","");
+                         login2=prompt("Ingrese su contraseña","");
+                         if (login==user & password==login2){
+                            alert(user+" ha ingresado sesion");
+                            } else{
+                                alert("El nombre de usuario o la contraseña es incorrecta");
+                            }
+                         
+                        }
+                    </script>
+        </section>
+       
+    </div>
+
+    <footer>
+        <div>
+            <p>Datos del alumno:</p>
+            <p>Nicolas Alonso - UNA Informatica General Drelichman 2021</p>
+            <p>Catedra Drelichman - Turno Mañana</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

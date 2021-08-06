@@ -1,0 +1,264 @@
+
+
+@media only screen and (max-width: 768px) {
+ 
+ 
+header{
+  width: 30%;
+    height: 4%;
+   }
+.logo {
+    width: 50%;
+    left: 0px;
+    padding: 2%;
+}
+.container img {
+    width: 20%;
+    max-height: 100px;
+}
+img {
+  width: 50%;
+}
+h1, h3{
+  font-size: 3rem;
+}
+.menu a{
+    
+    font-size: 0.7rem;
+    
+}
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 95%;
+    height: 9%;
+    left: -30px;
+}
+.logo {
+    width: 16%;
+    
+    padding: 5%;
+}
+.container img {
+    width: 30%;
+    max-height: 500px;
+}
+h1, h3{
+  font-size: 4rem;
+}
+.menu a{
+    
+    font-size: 1.5rem;
+    text-align: left;
+}
+}
+
+
+
+
+body {
+    margin: 0;    
+    background-color: black;
+   background-image: url(contenido/fondo.jpg) 
+}
+
+p {
+    margin: 2%;
+}
+
+strong {
+    color: red;
+}
+
+header {
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+    
+    position: fixed;
+    top: 0px;
+    
+    
+
+}
+
+.logo {
+    
+    float: left;
+   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu a{
+    color: white;
+    border: none;
+    
+    
+    text-decoration: none;
+    padding: 1%;
+}
+
+.menu a:hover{
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+section{
+    padding: 1% 10%;
+    margin-top: 4%;
+    background-color: black;
+    color: white;
+    background-image: url(contenido/fondo.jpg) 
+}
+
+section:nth-child(even) {
+    background-color: black;
+    color: black;
+}
+
+section:nth-child(even) strong {
+    color: black;
+}
+
+section:nth-child(even) img {
+    order: 2;
+}
+
+section:nth-child(even) p {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.container img {
+    
+}
+
+
+h1, h3 {
+    margin-top: 5%;
+    color: white;
+    margin: 1%;
+    
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:red;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Galeria */
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Posicion de los controles*/
+.next {
+  right: -30;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 70;
+}
+
+/* background de los controles */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* texto de los numeros */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* texto */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* columnas */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* transparencias */
+.demo {
+  opacity: 0.15;
+
+}
+
+.active{
+  opacity: 3;
+  
+}
+
+/* estilos de los hipervinculos */
+a:link {
+color:white;
+}
+a:visited {
+  color:red;
+}
